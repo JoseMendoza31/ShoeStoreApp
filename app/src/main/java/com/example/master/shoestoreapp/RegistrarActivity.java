@@ -9,7 +9,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrarActivity extends AppCompatActivity {
-    //private FirebaseDatabase ShoeStoreData;
+
     private DatabaseReference ShoeStoreData;
     private DatabaseReference ShoeStoreReference;
     private String coleccionProductos="productos";

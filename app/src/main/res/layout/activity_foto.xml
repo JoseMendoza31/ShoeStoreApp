@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     android:orientation="vertical"
     tools:context=".FotoActivity">
 
@@ -11,7 +12,7 @@
         android:id="@+id/iV_imagen"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
 
     <Button
         android:id="@+id/btnTomarFoto"
