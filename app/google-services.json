@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1091495354303",
+    "firebase_url": "https://shoestoredata.firebaseio.com",
+    "project_id": "shoestoredata",
+    "storage_bucket": "shoestoredata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091495354303:android:b3aae1ee4b968766",
+        "android_client_info": {
+          "package_name": "com.example.master.shoestoreapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091495354303-lrfevojcfah5pe0u7ectot1rmmahou7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.master.shoestoreapp",
+            "certificate_hash": "062b60ba26691748b797a2d30e2ac67da44847ab"
+          }
+        },
+        {
+          "client_id": "1091495354303-on6unf7lt5pqcgi7a79tro9smvl6blis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_Cj92e4pT7mDyy9HTwPT75PgPcaXl_Nw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091495354303-on6unf7lt5pqcgi7a79tro9smvl6blis.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
