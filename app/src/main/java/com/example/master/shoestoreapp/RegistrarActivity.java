@@ -9,7 +9,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrarActivity extends AppCompatActivity {
-    private FirebaseDatabase ShoeStoreData;
+    //private FirebaseDatabase ShoeStoreData;
+    private DatabaseReference ShoeStoreData;
     private DatabaseReference ShoeStoreReference;
     private String coleccionProductos="productos";
 
@@ -18,8 +19,8 @@ public class RegistrarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar);
-        ShoeStoreData=FirebaseDatabase.getInstance();
-        ShoeStoreReference= ShoeStoreData.getReference();
+        ShoeStoreData=FirebaseDatabase.getInstance().getReference();
+        ShoeStoreReference= ShoeStoreData.child(coleccionProductos);
 
     }
 
@@ -37,20 +38,17 @@ public class RegistrarActivity extends AppCompatActivity {
                 editTextCategoria.getText().toString(), editTextColor.getText().toString(),
                 editTextPrecio.getText().toString(), editTextTalla.getText().toString());
 
-        Registrar(pdt);
+        RegistrarNuevo(pdt);
     }
     private  String Registrar(Producto pdt){
         String codigo= pdt.getCodigo();
-        ShoeStoreReference.child(coleccionProductos).child(codigo).setValue(pdt);
+        ShoeStoreReference.child(codigo).setValue(pdt);
         return codigo;
     }
 
-   /* private String RegistrarNuevo(Producto pdt){
+   private String RegistrarNuevo(Producto pdt){
         String codigo= ShoeStoreReference.push().getKey();
-        ShoeStoreReference.child(coleccionProductos).child(codigo).setValue(pdt);
+        ShoeStoreData.child(codigo).setValue(pdt);
         return  codigo;
-    }*/
-
-
-
+    }
 }
